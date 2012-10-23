@@ -1,5 +1,5 @@
 <?php
-//Fingerbooks
+//Fingerbooks by Nicola
 $csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdDVReEY0MVBmajB3TXhhaFF4TzF6MEE&single=true&gid=5&output=csv';
 
 //Gossipsalad
