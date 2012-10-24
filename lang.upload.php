@@ -19,7 +19,7 @@ To be done:
 //$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG0tV21nSC1IZW5qWkEyYWhFSHJCcGc&single=true&gid=5&output=csv';
 
 //Blinko
-$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVAtd1I1V1N1N2p0RFE&output=csv';
+$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVAtd1I1V1N1N2p0RFE&single=true&gid=5&output=csv';
 
 #$lang              = 'ca_ca_fingerbooks_eng';  //Lingua
 #$translationindex  = 3;           							//Colonna del file csv
