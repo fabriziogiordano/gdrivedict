@@ -7,7 +7,7 @@ To be done:
 */
 
 //Fingerbooks
-$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdDVReEY0MVBmajB3TXhhaFF4TzF6MEE&single=true&gid=5&output=csv';
+//$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdDVReEY0MVBmajB3TXhhaFF4TzF6MEE&single=true&gid=5&output=csv';
 
 //Gossipsalad
 //$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdFo3QWxOVVpxUFVOb3IxZTBhc1F3OEE&single=true&gid=5&output=csv';
@@ -18,15 +18,18 @@ $csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdDVReEY0MVBmajB
 //Playplanet
 //$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG0tV21nSC1IZW5qWkEyYWhFSHJCcGc&single=true&gid=5&output=csv';
 
+//Blinko
+$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVAtd1I1V1N1N2p0RFE&output=csv';
+
 #$lang              = 'ca_ca_fingerbooks_eng';  //Lingua
 #$translationindex  = 3;           							//Colonna del file csv
 #$keyindex          = 1;                   			//Colonna della chiave della lingua
 
-$lang              = 'it_it_fingerbooks';      	//Lingua
-$translationindex  = 2;            							//Colonna del file csv
-$keyindex          = 1;                    			//Colonna della chiave della lingua
-$dict              = 'it-it-it_fingerbooks';   	//Stampa dizionario
-$nation            = 'it_it_fingerbooks';    		//Stampa dizionario
+#$lang              = 'it_it_fingerbooks';      	//Lingua
+#$translationindex  = 2;            							//Colonna del file csv
+#$keyindex          = 1;                    			//Colonna della chiave della lingua
+#$dict              = 'it-it-it_fingerbooks';   	//Stampa dizionario
+#$nation            = 'it_it_fingerbooks';    		//Stampa dizionario
 
 #$lang              = 'us_us_gossipsalad_eng';  //Lingua
 #$translationindex  = 2;            						//Colonna del file csv
@@ -45,6 +48,12 @@ $nation            = 'it_it_fingerbooks';    		//Stampa dizionario
 #$keyindex          = 1;                    		//Colonna della chiave della lingua
 #$dict              = 'en-us-us_playplanet';   	//Stampa dizionario
 #$nation            = 'us_us_playplanet_eng';  	//Stampa dizionario
+
+$lang              = 'fr_fr_blinko';  	//Lingua
+$translationindex  = 2;            						//Colonna del file csv
+$keyindex          = 1;                    		//Colonna della chiave della lingua
+$dict              = 'fr-fr-fr_blinko';   	//Stampa dizionario
+$nation            = 'fr_fr_blinko';  	//Stampa dizionario
 
 
 $keys = array();
