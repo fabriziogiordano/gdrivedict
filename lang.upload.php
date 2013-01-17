@@ -19,7 +19,10 @@ To be done:
 //$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG0tV21nSC1IZW5qWkEyYWhFSHJCcGc&single=true&gid=5&output=csv';
 
 //Blinko
-$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVAtd1I1V1N1N2p0RFE&single=true&gid=5&output=csv';
+//$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVAtd1I1V1N1N2p0RFE&single=true&gid=5&output=csv';
+
+//Cellybean
+$csv = 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4WmlTQVpMZXRyOGtmTkE&single=true&gid=0&output=csv';
 
 #$lang              = 'ca_ca_fingerbooks_eng';  //Lingua
 #$translationindex  = 3;           							//Colonna del file csv
@@ -49,12 +52,17 @@ $csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVA
 #$dict              = 'en-us-us_playplanet';   	//Stampa dizionario
 #$nation            = 'us_us_playplanet_eng';  	//Stampa dizionario
 
-$lang              = 'fr_fr_blinko';  	//Lingua
-$translationindex  = 2;            						//Colonna del file csv
-$keyindex          = 1;                    		//Colonna della chiave della lingua
-$dict              = 'fr-fr-fr_blinko';   	//Stampa dizionario
-$nation            = 'fr_fr_blinko';  	//Stampa dizionario
+#$lang              = 'fr_fr_blinko';  	//Lingua
+#$translationindex  = 2;            						//Colonna del file csv
+#$keyindex          = 1;                    		//Colonna della chiave della lingua
+#$dict              = 'fr-fr-fr_blinko';   	//Stampa dizionario
+#$nation            = 'fr_fr_blinko';  	//Stampa dizionario
 
+$lang              = 'ca_ca_cellybean_eng';   //Lingua
+$translationindex  = 2;                                                        //Colonna del file csv
+$keyindex          = 1;                                //Colonna della chiave della lingua
+$dict              = 'en-ca-ca_cellybean';        //Stampa dizionario
+$nation            = 'ca_ca_cellybean_eng';   //Stampa dizionario
 
 $keys = array();
 $counter = 1;
