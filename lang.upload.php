@@ -25,7 +25,16 @@ To be done:
 //$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdEVJU2l6V3dDV2lPUG9wWnhCeTJxb3c&single=true&gid=5&output=csv';
 
 //Waala Leaf engine
-$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG5vY1Y1UnExTy1oSGVTNlZLaV9RMHc&single=true&gid=5&output=csv';
+//$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG5vY1Y1UnExTy1oSGVTNlZLaV9RMHc&single=true&gid=5&output=csv';
+
+//El Chiste de Dia
+$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdC1nUkZ3TmpZMXRKZ2VfVUZsaHhjQWc&single=true&gid=5&output=csv';
+
+//iGirl Brasil
+$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdGEwRDQteDFWVHByQ2U5dVF0U3R4cFE&single=true&gid=5&output=csv';
+
+
+
 
 #$lang              = 'ca_ca_fingerbooks_eng';  //Lingua
 #$translationindex  = 3;                        //Colonna del file csv
@@ -67,11 +76,24 @@ $csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG5vY1Y1UnExTy1
 #$dict              = 'pt-br-br_goldgamifive';  //Stampa dizionario
 #$nation            = 'br_br_goldgamifive';     //Stampa dizionario
 
-$lang              = 'ca_waala_ca_fra';         //Lingua
-$translationindex  = 4;                         //Colonna del file csv
-$keyindex          = 1;                         //Colonna della chiave della lingua
-$dict              = 'fr-ca-waala_ca';          //Stampa dizionario
-$nation            = 'ca_waala_ca_fra';         //Stampa dizionario
+#$lang              = 'ca_waala_ca_fra';         //Lingua
+#$translationindex  = 4;                         //Colonna del file csv
+#$keyindex          = 1;                         //Colonna della chiave della lingua
+#$dict              = 'fr-ca-waala_ca';          //Stampa dizionario
+#$nation            = 'ca_waala_ca_fra';         //Stampa dizionario
+
+#$lang              = 'mx_mx_el_chiste_del_dia';    //Lingua
+#$translationindex  = 3;                            //Colonna del file csv
+#$keyindex          = 1;                            //Colonna della chiave della lingua
+#$dict              = 'es-mx-mx_el_chiste_del_dia'; //Stampa dizionario
+#$nation            = 'mx_mx_el_chiste_del_dia';    //Stampa dizionario
+
+$lang              = 'br_br_igirls';               //Lingua
+$translationindex  = 3;                            //Colonna del file csv
+$keyindex          = 1;                            //Colonna della chiave della lingua
+$dict              = 'pt-br-br_igirls';            //Stampa dizionario
+$nation            = 'br_br_igirls';               //Stampa dizionario
+
 
 $keys = array();
 $counter = 1;
@@ -109,9 +131,12 @@ function push($lang, $csv, $dict, $nation) {
     $row = 1;
     while (($data = fgetcsv($handle, 10000, ",")) !== FALSE) {
       if($row == 1) { $row=2; continue; }
-      echo $counter.'/'.$lines.' '; $counter++;
-      #var_dump($data);die;
-      update($lang,$data[$keyindex],$data[$translationindex], $dict, $nation);
+      //echo $counter.'/'.$lines.' '; $counter++;
+      //var_dump($data);die;
+      //if($data[$keyindex] == 'FINGER_JS') {
+        update($lang,$data[$keyindex],$data[$translationindex], $dict, $nation);
+      //  echo 'fatto';die;
+      //}
     }
     fclose($handle);
     printdictionary($dict,$nation);
