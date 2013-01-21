@@ -21,16 +21,15 @@ To be done:
 //Blinko
 //$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVAtd1I1V1N1N2p0RFE&single=true&gid=5&output=csv';
 
-<<<<<<< HEAD
+
 //Cellybean
 $csv = 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4WmlTQVpMZXRyOGtmTkE&single=true&gid=0&output=csv';
-=======
+
 //Gamifive BR
 //$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdEVJU2l6V3dDV2lPUG9wWnhCeTJxb3c&single=true&gid=5&output=csv';
 
 //Waala Leaf engine
-$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG5vY1Y1UnExTy1oSGVTNlZLaV9RMHc&single=true&gid=5&output=csv';
->>>>>>> 66cf157f65137ba502798855b4015042a6bb6888
+//$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG5vY1Y1UnExTy1oSGVTNlZLaV9RMHc&single=true&gid=5&output=csv';
 
 #$lang              = 'ca_ca_fingerbooks_eng';  //Lingua
 #$translationindex  = 3;                        //Colonna del file csv
@@ -54,7 +53,6 @@ $csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG5vY1Y1UnExTy1
 #$dict              = 'en-ca-ca_muchgossip';    //Stampa dizionario
 #$nation            = 'ca_ca_muchgossip_eng';   //Stampa dizionario
 
-<<<<<<< HEAD
 #$lang              = 'us_us_playplanet_eng';  	//Lingua
 #$translationindex  = 2;            						//Colonna del file csv
 #$keyindex          = 1;                    		//Colonna della chiave della lingua
@@ -72,7 +70,7 @@ $translationindex  = 2;                                                        /
 $keyindex          = 1;                                //Colonna della chiave della lingua
 $dict              = 'en-ca-ca_cellybean';        //Stampa dizionario
 $nation            = 'ca_ca_cellybean_eng';   //Stampa dizionario
-=======
+
 #$lang              = 'us_us_playplanet_eng';   //Lingua
 #$translationindex  = 2;                        //Colonna del file csv
 #$keyindex          = 1;                        //Colonna della chiave della lingua
@@ -91,12 +89,11 @@ $nation            = 'ca_ca_cellybean_eng';   //Stampa dizionario
 #$dict              = 'pt-br-br_goldgamifive';  //Stampa dizionario
 #$nation            = 'br_br_goldgamifive';     //Stampa dizionario
 
-$lang              = 'ca_waala_ca_fra';         //Lingua
-$translationindex  = 4;                         //Colonna del file csv
-$keyindex          = 1;                         //Colonna della chiave della lingua
-$dict              = 'fr-ca-waala_ca';          //Stampa dizionario
-$nation            = 'ca_waala_ca_fra';         //Stampa dizionario
->>>>>>> 66cf157f65137ba502798855b4015042a6bb6888
+#$lang              = 'ca_waala_ca_fra';         //Lingua
+#$translationindex  = 4;                         //Colonna del file csv
+#$keyindex          = 1;                         //Colonna della chiave della lingua
+#$dict              = 'fr-ca-waala_ca';          //Stampa dizionario
+#$nation            = 'ca_waala_ca_fra';         //Stampa dizionario
 
 $keys = array();
 $counter = 1;
