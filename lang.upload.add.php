@@ -31,12 +31,12 @@ $nation = $lang;
 
 echo "\n";
 echo "\n";
-echo "csvf ".$csv."\n";
+echo "csv file ".$csv."\n";
 echo "lang ".$lang."\n";
-echo "tran ".$translationindex."\n";
-echo "keyi ".$keyindex."\n";
-echo "dict ".$dict."\n";
-echo "nati ".$nation."\n";
+echo "translation index ".$translationindex."\n";
+echo "key index ".$keyindex."\n";
+echo "dictonary ".$dict."\n";
+echo "nation ".$nation."\n";
 echo "\n";
 echo "\n";
 
