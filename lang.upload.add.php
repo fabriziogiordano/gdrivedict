@@ -6,33 +6,50 @@ To be done:
 
 */
 
-//Fingerbooks
-//$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdDVReEY0MVBmajB3TXhhaFF4TzF6MEE&single=true&gid=5&output=csv';
+$product = $argv[1];
+$country = $argv[2];
+$language = $argv[3];
+$csvColumn = $argv[4];
+$csvKeyColumn = $argv[5];
+$multiLingual = $argv[6];
 
-//Gossipsalad
-//$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdFo3QWxOVVpxUFVOb3IxZTBhc1F3OEE&single=true&gid=5&output=csv';
+$csvs = array(
+		"fingerbooks" 	=> 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdDVReEY0MVBmajB3TXhhaFF4TzF6MEE&single=true&gid=5&output=csv',
+		"gossipsalad" 	=> 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdFo3QWxOVVpxUFVOb3IxZTBhc1F3OEE&single=true&gid=5&output=csv',
+		"muchgossip"	=> 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHZvbl9rRmE5YnJSbkZUZF9YaXg3WEE&single=true&gid=5&output=csv',
+		"playplanet"	=> 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG0tV21nSC1IZW5qWkEyYWhFSHJCcGc&single=true&gid=5&output=csv',
+		"blinko"		=> 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVAtd1I1V1N1N2p0RFE&single=true&gid=5&output=csv',
+		"cellybean"		=> 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4WmlTQVpMZXRyOGtmTkE&single=true&gid=0&output=csv'
+);
 
-//MuchGossip
-//$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHZvbl9rRmE5YnJSbkZUZF9YaXg3WEE&single=true&gid=5&output=csv';
+$csv = $csvs[$product];
+$lang = $country."_".$country."_".$product.($multiLingual ? "_".$multiLingual : "");
+$translationindex = $csvColumn;
+$keyindex = $csvKeyColumn;
+$dict = $language."-".$country."-".$country."_".$product;
+$nation = $lang;
 
-//Playplanet
-//$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG0tV21nSC1IZW5qWkEyYWhFSHJCcGc&single=true&gid=5&output=csv';
+echo "\n";
+echo "\n";
+echo "csvf ".$csv."\n";
+echo "lang ".$lang."\n";
+echo "tran ".$translationindex."\n";
+echo "keyi ".$keyindex."\n";
+echo "dict ".$dict."\n";
+echo "nati ".$nation."\n";
+echo "\n";
+echo "\n";
 
-//Blinko
-//$csv = 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVAtd1I1V1N1N2p0RFE&single=true&gid=5&output=csv';
-
-//Cellybean
-$csv = 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4WmlTQVpMZXRyOGtmTkE&single=true&gid=0&output=csv';
 
 #$lang              = 'ca_ca_fingerbooks_eng';  //Lingua
 #$translationindex  = 3;           							//Colonna del file csv
 #$keyindex          = 1;                   			//Colonna della chiave della lingua
 
-#$lang              = 'it_it_fingerbooks';      	//Lingua
-#$translationindex  = 2;            							//Colonna del file csv
-#$keyindex          = 1;                    			//Colonna della chiave della lingua
-#$dict              = 'it-it-it_fingerbooks';   	//Stampa dizionario
-#$nation            = 'it_it_fingerbooks';    		//Stampa dizionario
+//$lang              = 'it_it_fingerbooks';      	//Lingua
+//$translationindex  = 2;            							//Colonna del file csv
+//$keyindex          = 1;                    			//Colonna della chiave della lingua
+//$dict              = 'it-it-it_fingerbooks';   	//Stampa dizionario
+//$nation            = 'it_it_fingerbooks';    		//Stampa dizionario
 
 #$lang              = 'us_us_gossipsalad_eng';  //Lingua
 #$translationindex  = 2;            						//Colonna del file csv
@@ -58,11 +75,11 @@ $csv = 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4Wml
 #$dict              = 'fr-fr-fr_blinko';   	//Stampa dizionario
 #$nation            = 'fr_fr_blinko';  	//Stampa dizionario
 
-$lang              = 'ca_ca_cellybean_eng';   //Lingua
-$translationindex  = 2;                                                        //Colonna del file csv
-$keyindex          = 1;                                //Colonna della chiave della lingua
-$dict              = 'en-ca-ca_cellybean';        //Stampa dizionario
-$nation            = 'ca_ca_cellybean_eng';   //Stampa dizionario
+// $lang              = 'ca_ca_cellybean_eng';   //Lingua
+// $translationindex  = 2;                                                        //Colonna del file csv
+// $keyindex          = 1;                                //Colonna della chiave della lingua
+// $dict              = 'en-ca-ca_cellybean';        //Stampa dizionario
+// $nation            = 'ca_ca_cellybean_eng';   //Stampa dizionario
 
 $keys = array();
 $counter = 1;
