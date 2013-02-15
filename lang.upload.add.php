@@ -19,7 +19,10 @@ $csvs = array(
 		"muchgossip"	=> 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHZvbl9rRmE5YnJSbkZUZF9YaXg3WEE&single=true&gid=5&output=csv',
 		"playplanet"	=> 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdG0tV21nSC1IZW5qWkEyYWhFSHJCcGc&single=true&gid=5&output=csv',
 		"blinko"		=> 'https://docs.google.com/spreadsheet/pub?key=0AoVR4wFeDQrYdHN4YTdKY1pPYVAtd1I1V1N1N2p0RFE&single=true&gid=5&output=csv',
-		"cellybean"		=> 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4WmlTQVpMZXRyOGtmTkE&single=true&gid=0&output=csv'
+		"cellybean"		=> 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4WmlTQVpMZXRyOGtmTkE&single=true&gid=0&output=csv',
+                "smartmotime"             => 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4WmlTQVpMZXRyOGtmTkE&single=true&gid=0&output=csv',
+		"ifortuneapp" 	=> 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdExNU1BEZXVmQmQ3UHdKVGltM3FkV2c&output=csv',
+		"ifortune"	=> 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdExNU1BEZXVmQmQ3UHdKVGltM3FkV2c&output=csv'
 );
 
 $csv = $csvs[$product];
