@@ -23,7 +23,8 @@ $csvs = array(
                 "smartmotime"             => 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4WmlTQVpMZXRyOGtmTkE&single=true&gid=0&output=csv',
                 "ilovemusic"             => 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdGc2OW55dFd4WmlTQVpMZXRyOGtmTkE&single=true&gid=0&output=csv',
 		"ifortuneapp" 	=> 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdExNU1BEZXVmQmQ3UHdKVGltM3FkV2c&output=csv',
-		"ifortune"	=> 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdExNU1BEZXVmQmQ3UHdKVGltM3FkV2c&output=csv'
+		"ifortune"	=> 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdExNU1BEZXVmQmQ3UHdKVGltM3FkV2c&output=csv',
+		"ifortunesprint" => 'https://docs.google.com/spreadsheet/pub?key=0ArGUjN82xqFSdExNU1BEZXVmQmQ3UHdKVGltM3FkV2c&output=csv'
 );
 
 $csv = $csvs[$product];
